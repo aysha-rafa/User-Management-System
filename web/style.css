@@ -1,0 +1,9 @@
+table,td{
+    border: 1px solid black;
+}
+
+input,select{
+    width: 100%;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

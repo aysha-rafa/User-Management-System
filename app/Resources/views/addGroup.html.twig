@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    {{ form_start(group) }}
+    {{ form_widget(group) }}
+    <button type="submit" value="save">Save</button>
+    <a href="{{ path('homepage') }}"><button type="button" value="cancel">Cancel</button></a>
+    {{ form_end(group) }}
+
+{% endblock %}

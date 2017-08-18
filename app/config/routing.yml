@@ -1,0 +1,69 @@
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
+
+addUser:
+    path: /add_user
+    defaults:
+      _controller: AppBundle:Admin:addUser
+
+listUser:
+    path: /list_user
+    defaults:
+      _controller: AppBundle:Admin:listUser
+
+deleteUser:
+    path: /delete_user/{id}
+    defaults:
+      _controller: AppBundle:Admin:deleteUser
+
+addGroup:
+    path: /add_group
+    defaults:
+      _controller: AppBundle:Admin:addGroup
+
+listgroup:
+    path: /list_group
+    defaults:
+      _controller: AppBundle:Admin:listGroup
+
+deleteGroup:
+    path: /delete_group/{id}
+    defaults:
+      _controller: AppBundle:Admin:deleteGroup
+
+editGroup:
+    path: /edit_group/{id}
+    defaults:
+      _controller: AppBundle:Admin:editGroup
+
+listGroupapi:
+   path: /api/group
+   defaults:
+      _controller: AppBundle:Api:listGroupApi
+
+listUserapi:
+   path: /api/user
+   defaults:
+      _controller: AppBundle:Api:listUserApi
+
+AddUserapi:
+   path: /api/add_user
+   defaults:
+      _controller: AppBundle:Api:AddUserApi
+
+DeleteUserapi:
+   path: /api/delete_user
+   defaults:
+      _controller: AppBundle:Api:DeleteUserApi
+
+AddGroupapi:
+   path: /api/add_group
+   defaults:
+      _controller: AppBundle:Api:AddGroupApi
+
+DeleteGroupapi:
+   path: /api/delete_group
+   defaults:
+      _controller: AppBundle:Api:DeleteGroupApi
+

@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    {% if users is not empty %}
+        <table style="width:100%">
+            <tr>
+                <th>Name</th>
+                <th>Delete user</th>
+            </tr>
+            {% for user in users%}
+            <tr>
+                <td>{{ user.name }}</td>
+                <td> <a href="{{ path('deleteUser',{'id': user.id  }) }}">Delete</a></td>
+            </tr>
+        {% endfor %}
+        </table>
+        {% else %}
+            No users found!
+    {% endif %}
+{% endblock %}

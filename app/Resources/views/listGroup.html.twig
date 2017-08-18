@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+    {% block body %}
+        {% if groups is not empty %}
+            <table style="width:100%">
+                <tr>
+                    <th>Group Name</th>
+                    <th>Delete group</th>
+                    <th>Add/Remove users from group</th>
+                </tr>
+                {% for group in groups%}
+                    <tr>
+                        <td>{{ group.groupName }}</td>
+                        <td><a href="{{ path('deleteGroup',{'id': group.id  }) }}">Delete group</a> </td>
+                        <td><a href="{{ path('editGroup',{'id': group.id  }) }}">Add/Remove users</a></td>
+                    </tr>
+                {% endfor %}
+            </table>
+            {% else %}
+            No Groups found!
+        {% endif %}
+    {% endblock %}
