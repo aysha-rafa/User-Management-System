@@ -36,6 +36,8 @@ editGroup:
     path: /edit_group/{id}
     defaults:
       _controller: AppBundle:Admin:editGroup
+      
+###########      API   ###########
 
 listGroupapi:
    path: /api/group
