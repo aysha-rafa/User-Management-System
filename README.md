@@ -3,7 +3,7 @@ User Management System
 
 Database Name: user_management
 
-In this project, the admin can add users, delete users, create groups, delete groups and add/remove users from group. 
+This project is developed in Symfony3. In this project, the admin can add users, delete users, create groups, delete groups and add/remove users from group. 
 
 I have also added the json format return for the tasks.
 
