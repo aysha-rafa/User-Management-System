@@ -8,6 +8,7 @@ I have also added the json format return for the tasks.
 The following are routes for those:
 
 -For listing the users - /api/user
+
 -For listing groups - /api/group
 -For adding a user - /api/add_user?name=(give name here)
 -For deleting a user - /api/delete_user?id= (give id here)
